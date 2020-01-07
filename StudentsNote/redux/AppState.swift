@@ -8,17 +8,17 @@
 //
 
 import Foundation
-let dayGroupBefore:Int = 10
-let dayGroupAfter:Int = 10
+let dayGroupBefore:Int = 4
+let dayGroupAfter:Int = 20
 struct AppState {
-    var selectDate:Date
+    var selectedDate:Date
     var dayGroup:[Date] = []
     var dayModels:[String:DayModel] = [:]
 }
 extension AppState{
     mutating func updateDayGroup(){
         self.dayGroup = (-dayGroupBefore..<dayGroupAfter)
-            .map{Calendar.current.date(byAdding: .day, value: $0, to: self.selectDate)!}
+            .map{Calendar.current.date(byAdding: .day, value: $0, to: self.selectedDate)!}
     }
 }
 extension AppState{

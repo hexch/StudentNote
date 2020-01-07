@@ -12,7 +12,7 @@ import SwiftUI
 struct ContentView: View {
     @EnvironmentObject var store:Store
     @State private var index :Int = 1
-    var selectedModel:DayModel? {self.store.state.dayModels[self.store.state.selectDate.yyyyMMdd]}
+    var selectedModel:DayModel? {self.store.state.dayModels[self.store.state.selectedDate.yyyyMMdd]}
     
     var dayViews :[DayView]{
         self.store.state.dayGroup.map{DayView(date: $0)}
@@ -66,7 +66,7 @@ struct ContentView: View {
     
     func editTask()
     {
-        let model = self.store.state.dayModels[self.store.state.selectDate.yyyyMMdd]
+        let model = self.store.state.dayModels[self.store.state.selectedDate.yyyyMMdd]
         let task = model?.tasks.first
         guard let _ = model,let _ = task else {
             return

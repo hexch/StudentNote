@@ -13,7 +13,7 @@ import Combine
 
 class DBServiceTests: XCTestCase {
     let selectedDate = Date()
-    var store :Store = Store(state: AppState(selectDate: Date()))
+    var store :Store = Store(state: AppState(selectedDate: Date()))
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
 //        let event = "test event"

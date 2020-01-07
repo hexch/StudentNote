@@ -15,7 +15,7 @@ struct DayView: View,Identifiable {
     
     var date:Date
     var isSelected :Bool{
-        self.date.isSameDay(self.store.state.selectDate)
+        self.date.isSameDay(self.store.state.selectedDate)
     }
     var w :CGFloat = 40.0
     var h :CGFloat = 50.0

@@ -36,6 +36,13 @@
 		A08758D823BCF092009F352A /* DayGroupScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08758D723BCF092009F352A /* DayGroupScrollView.swift */; };
 		A08758DB23BCF10E009F352A /* HScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08758DA23BCF10E009F352A /* HScrollView.swift */; };
 		A08758DD23BD0898009F352A /* PowerScroll.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08758DC23BD0898009F352A /* PowerScroll.swift */; };
+		A08758DF23C4C43A009F352A /* TaskContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08758DE23C4C43A009F352A /* TaskContentView.swift */; };
+		A08758E123C4C48C009F352A /* ArcTagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08758E023C4C48C009F352A /* ArcTagView.swift */; };
+		A08758E323C4C727009F352A /* UnderLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08758E223C4C727009F352A /* UnderLine.swift */; };
+		A08758E523C4C773009F352A /* TitleInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08758E423C4C773009F352A /* TitleInput.swift */; };
+		A08758E723C4C7CC009F352A /* TaskEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08758E623C4C7CC009F352A /* TaskEditor.swift */; };
+		A08758E923C4C845009F352A /* TimeSelectorPad.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08758E823C4C845009F352A /* TimeSelectorPad.swift */; };
+		A08758EB23C4CAC6009F352A /* MainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08758EA23C4CAC6009F352A /* MainPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +102,13 @@
 		A08758D723BCF092009F352A /* DayGroupScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayGroupScrollView.swift; sourceTree = "<group>"; };
 		A08758DA23BCF10E009F352A /* HScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HScrollView.swift; sourceTree = "<group>"; };
 		A08758DC23BD0898009F352A /* PowerScroll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerScroll.swift; sourceTree = "<group>"; };
+		A08758DE23C4C43A009F352A /* TaskContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskContentView.swift; sourceTree = "<group>"; };
+		A08758E023C4C48C009F352A /* ArcTagView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcTagView.swift; sourceTree = "<group>"; };
+		A08758E223C4C727009F352A /* UnderLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnderLine.swift; sourceTree = "<group>"; };
+		A08758E423C4C773009F352A /* TitleInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleInput.swift; sourceTree = "<group>"; };
+		A08758E623C4C7CC009F352A /* TaskEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskEditor.swift; sourceTree = "<group>"; };
+		A08758E823C4C845009F352A /* TimeSelectorPad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeSelectorPad.swift; sourceTree = "<group>"; };
+		A08758EA23C4CAC6009F352A /* MainPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -253,6 +267,7 @@
 		A08758CE23BA4A7B009F352A /* pages */ = {
 			isa = PBXGroup;
 			children = (
+				A08758EA23C4CAC6009F352A /* MainPage.swift */,
 			);
 			path = pages;
 			sourceTree = "<group>";
@@ -261,6 +276,10 @@
 			isa = PBXGroup;
 			children = (
 				A08758D323BCE9B4009F352A /* DayView.swift */,
+				A08758E023C4C48C009F352A /* ArcTagView.swift */,
+				A08758E223C4C727009F352A /* UnderLine.swift */,
+				A08758E423C4C773009F352A /* TitleInput.swift */,
+				A08758E823C4C845009F352A /* TimeSelectorPad.swift */,
 			);
 			path = slices;
 			sourceTree = "<group>";
@@ -268,7 +287,9 @@
 		A08758D023BCE968009F352A /* components */ = {
 			isa = PBXGroup;
 			children = (
+				A08758DE23C4C43A009F352A /* TaskContentView.swift */,
 				A08758D723BCF092009F352A /* DayGroupScrollView.swift */,
+				A08758E623C4C7CC009F352A /* TaskEditor.swift */,
 			);
 			path = components;
 			sourceTree = "<group>";
@@ -397,13 +418,20 @@
 				A08758BA23B8F80D009F352A /* Logger.swift in Sources */,
 				A08758DD23BD0898009F352A /* PowerScroll.swift in Sources */,
 				A009A7FE23B4F0DA00F018F7 /* AppDelegate.swift in Sources */,
+				A08758EB23C4CAC6009F352A /* MainPage.swift in Sources */,
+				A08758DF23C4C43A009F352A /* TaskContentView.swift in Sources */,
 				A009A82A23B5054A00F018F7 /* DBService.swift in Sources */,
+				A08758E123C4C48C009F352A /* ArcTagView.swift in Sources */,
 				A009A82723B4F8FD00F018F7 /* Effect.swift in Sources */,
 				A009A82523B4F14500F018F7 /* Action.swift in Sources */,
 				A08758CA23BA3780009F352A /* DBEffect.swift in Sources */,
+				A08758E923C4C845009F352A /* TimeSelectorPad.swift in Sources */,
+				A08758E523C4C773009F352A /* TitleInput.swift in Sources */,
 				A08758C523B8FE8F009F352A /* DBModels.swift in Sources */,
+				A08758E723C4C7CC009F352A /* TaskEditor.swift in Sources */,
 				A08758D823BCF092009F352A /* DayGroupScrollView.swift in Sources */,
 				A08758D623BCEB5D009F352A /* RoundBorderModifier.swift in Sources */,
+				A08758E323C4C727009F352A /* UnderLine.swift in Sources */,
 				A009A82323B4F12A00F018F7 /* AppState.swift in Sources */,
 				A08758DB23BCF10E009F352A /* HScrollView.swift in Sources */,
 				A08758BB23B8F80D009F352A /* Helpers.swift in Sources */,

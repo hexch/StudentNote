@@ -29,7 +29,7 @@ class Store:ObservableObject{
         Logger.d(tag: .ACTION, msg: action)
         switch action {
         case .select(let date, let updateDayGroup):
-            state.selectDate = date
+            state.selectedDate = date
             if updateDayGroup {
                 state.updateDayGroup()
             }
@@ -69,4 +69,6 @@ extension Store {
     static func create(state:AppState)->Store{
         return Store(state:state)
     }
+    
+    static let sampleStore = create(state: AppState(selectedDate: Date()))
 }

@@ -12,7 +12,7 @@ import XCTest
 
 class StoreTest: XCTestCase {
     let selectedDate = Date()
-    var store :Store = Store(state: AppState(selectDate: Date()))
+    var store :Store = Store(state: AppState(selectedDate: Date()))
     let event = "test event"
     let company = "test company"
     let startDate = Date.generate(date: "20191230101010", formatter: "yyyyMMddHHmmss")
